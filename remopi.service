@@ -7,6 +7,3 @@ WorkingDirectory=/home/pi/remopi
 Environment=NODE_ENV=production
 Restart=always
 User=pi
-
-[Install]
-WantedBy=multi-user.target
