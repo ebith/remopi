@@ -2,7 +2,7 @@
 Description=Remopi
 
 [Service]
-ExecStart=node /home/pi/remopi/index.js
+ExecStart=/usr/bin/node /home/pi/remopi/index.js
 WorkingDirectory=/home/pi/remopi
 Environment=NODE_ENV=production
 Restart=always
