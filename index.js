@@ -17,7 +17,7 @@ app.get('/availables', (req, res) => {
 
 app.get('/api/:device/:action', (req, res) => {
   if (Object.keys(ircodes).includes(`${req.params.device}:${req.params.action}`)) {
-    exec(`python3 irrp.py --play --gpio 17 --file ${ircodesPath} ${req.params.device}:${req.params.action}`);
+    exec(`${path.resolve(process.env.HOME, 'bin', 'irrp.py')} --play --gpio 17 --file ${ircodesPath} ${req.params.device}:${req.params.action}`);
   } else if (Object.keys(commands).includes(`${req.params.device}:${req.params.action}`)) {
     exec(commands[`${req.params.device}:${req.params.action}`]);
   } else {
