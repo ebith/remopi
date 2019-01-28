@@ -30,6 +30,7 @@
     "bulma": "^0.7.2",
     "parcel-bundler": "^1.11.0",
     "parcel-plugin-purgecss": "^2.1.0",
+    "parcel-plugin-static-files-copy": "^2.0.0",
     "preact": "^8.4.2",
     "sass": "^1.16.1"
   },
