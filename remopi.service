@@ -2,8 +2,11 @@
 Description=Remopi
 
 [Service]
-ExecStart=/usr/bin/node /home/pi/remopi/index.js
-WorkingDirectory=/home/pi/remopi
+ExecStart=/usr/bin/node /home/pi/.ghq/github.com/ebith/remopi/index.js
+WorkingDirectory=/home/pi/.ghq/github.com/ebith/remopi
 Environment=NODE_ENV=production
 Restart=always
 User=pi
+
+[Install]
+WantedBy=multi-user.target
