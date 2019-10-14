@@ -2,10 +2,10 @@ import './index.sass';
 import {h, render, Component} from 'preact';
 import {get} from 'axios';
 import {library, dom, icon} from '@fortawesome/fontawesome-svg-core';
-import {faPowerOff, faThermometerHalf, faLightbulb, faTv, faDesktop, faWind} from '@fortawesome/free-solid-svg-icons';
+import {faPowerOff, faThermometerHalf, faLightbulb, faTv, faDesktop, faWind, faPrint} from '@fortawesome/free-solid-svg-icons';
 import meta from './meta';
 
-library.add(faPowerOff, faThermometerHalf, faLightbulb, faTv, faDesktop, faWind);
+library.add(faPowerOff, faThermometerHalf, faLightbulb, faTv, faDesktop, faWind, faPrint);
 
 (async () => {
   const response = await get('/availables');

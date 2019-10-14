@@ -3,5 +3,6 @@ export default {
   desktop: {icon: 'fa-desktop', title: 'パソコン'},
   fan: {icon: 'fa-wind', title: '扇風機'},
   light: {icon: 'fa-lightbulb', title: '照明'},
-  tv: {icon: 'fa-tv', title: 'テレビ'}
+  tv: {icon: 'fa-tv', title: 'テレビ'},
+  "3dPrinter": {icon: 'fa-print', title: '3Dプリンタ'}
 };
