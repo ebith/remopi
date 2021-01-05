@@ -21,17 +21,17 @@
   },
   "dependencies": {
     "express": "^4.16.4",
-    "xdg-basedir": "^3.0.0"
+    "xdg-basedir": "^4.0.0"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.12",
     "@fortawesome/free-solid-svg-icons": "^5.6.3",
-    "axios": "^0.18.0",
-    "bulma": "^0.7.2",
+    "axios": "^0.21.1",
+    "bulma": "^0.9.1",
     "parcel-bundler": "^1.11.0",
-    "parcel-plugin-purgecss": "^2.1.0",
+    "parcel-plugin-purgecss": "^3.0.0",
     "parcel-plugin-static-files-copy": "^2.0.0",
-    "preact": "^8.4.2",
+    "preact": "^10.5.9",
     "sass": "^1.16.1"
   },
   "browserslist": [
@@ -41,5 +41,8 @@
   ],
   "scripts": {
     "build": "NODE_ENV=production parcel build src/index.html --no-source-maps --no-cache --experimental-scope-hoisting"
+  },
+  "resolutions": {
+    "node-forge": "0.10.0"
   }
 }
